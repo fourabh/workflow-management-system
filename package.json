@@ -5,7 +5,6 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "preinstall": "npm install --no-optional rollup@3",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
@@ -17,7 +16,7 @@
     "react-icons": "^5.0.1",
     "react-router-dom": "^6.22.3",
     "reactflow": "^11.11.4",
-    "rollup": "^4.37.0"
+    "rollup": "^3.29.5"
   },
   "devDependencies": {
     "@eslint/js": "^8.56.0",
