@@ -1,9 +1,8 @@
 {
-  "framework": "vite",
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/"
+  "version": 2,
+  "build": {
+    "env": {
+      "ROLLUP_USE_WASM": "1"
     }
-  ]
-} 
+  }
+}

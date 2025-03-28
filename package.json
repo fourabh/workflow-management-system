@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "preinstall": "npm install --no-optional rollup@latest",
-    "build": "export ROLLUP_USE_WASM=1 || set ROLLUP_USE_WASM=1 && vite build",
+    "preinstall": "npm install --no-optional rollup@3",
+    "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -37,5 +37,8 @@
   "engines": {
     "node": "20.x",
     "npm": ">=10.0.0"
+  },
+  "overrides": {
+    "rollup": "^4.37.0" 
   }
 }
