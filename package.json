@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "preinstall": "npm install --no-optional rollup@latest",
     "build": "export ROLLUP_USE_WASM=1 || set ROLLUP_USE_WASM=1 && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
