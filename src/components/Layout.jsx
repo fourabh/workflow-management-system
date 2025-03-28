@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
+import PropTypes from 'prop-types';
 
 const Layout = ({ children }) => {
   const { isAuthenticated, user, logout } = useAuth();
@@ -37,6 +38,10 @@ const Layout = ({ children }) => {
       </main>
     </div>
   );
+};
+
+Layout.propTypes = {
+  children: PropTypes.node.isRequired
 };
 
 export default Layout; 

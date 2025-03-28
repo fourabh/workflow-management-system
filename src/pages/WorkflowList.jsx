@@ -209,8 +209,8 @@ const WorkflowList = () => {
                     <th className="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">
                       Actions
                     </th>
-                  </tr>
-                </thead>
+          </tr>
+        </thead>
                 <tbody className="bg-white divide-y divide-gray-200">
                   {filteredWorkflows.map((workflow) => (
                     <tr key={workflow.id} className="hover:bg-gray-50">
@@ -222,10 +222,10 @@ const WorkflowList = () => {
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                         {workflow.lastEditedOn}
-                      </td>
+              </td>
                       <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 max-w-sm truncate">
                         {workflow.description}
-                      </td>
+              </td>
                       <td className="px-6 py-4 whitespace-nowrap text-center">
                         <button onClick={() => toggleFavorite(workflow.id)} className="transform transition-transform hover:scale-110">
                           {workflow.isFavorite ? (
@@ -234,21 +234,21 @@ const WorkflowList = () => {
                             <FaThumbtack className="text-gray-300 h-5 w-5 transform rotate-45" />
                           )}
                         </button>
-                      </td>
+            </td>
                       <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                         <div className="flex items-center justify-end space-x-2">
                           <button
                             onClick={() => handleExecute(workflow)}
                             className="text-gray-700 bg-gray-100 px-3 py-1 rounded border hover:bg-gray-200"
                           >
-                            Execute
-                          </button>
+                Execute
+              </button>
                           <button
                             onClick={() => handleEdit(workflow.id)}
                             className="text-gray-700 bg-gray-100 px-3 py-1 rounded border hover:bg-gray-200"
                           >
-                            Edit
-                          </button>
+                Edit
+              </button>
                           <div className="relative">
                             <button 
                               className="text-gray-500 hover:text-gray-700"
@@ -274,11 +274,11 @@ const WorkflowList = () => {
                             <FaArrowDown />
                           </button>
                         </div>
-                      </td>
-                    </tr>
+            </td>
+          </tr>
                   ))}
-                </tbody>
-              </table>
+        </tbody>
+      </table>
               {filteredWorkflows.length === 0 && (
                 <div className="text-center py-4 text-gray-500">
                   No workflows found matching &quot;{searchTerm}&quot;
@@ -387,7 +387,7 @@ const WorkflowList = () => {
               </div>
             </div>
           </div>
-        </div>
+    </div>
       )}
     </Layout>
   );
