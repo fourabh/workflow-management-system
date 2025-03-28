@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes dashdraw {
+  from {
+    stroke-dashoffset: 10;
+  }
+}
+
+.react-flow__edge-path {
+  stroke-dasharray: none;
+  transition: stroke 0.3s ease;
+}
+
+.react-flow__edge {
+  pointer-events: all;
+}
+
+.edgebutton-foreignobject {
+  pointer-events: all;
+  transition: opacity 0.3s ease;
+}
+
+.edgebutton-foreignobject:hover {
+  opacity: 1;
+}
