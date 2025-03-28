@@ -1,5 +1,17 @@
 {
   "buildCommand": "npm run build",
-  "installCommand": "npm install --force",
-  "framework": "vite"
+  "installCommand": "npm install",
+  "framework": "vite",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    }
+  ]
 } 
